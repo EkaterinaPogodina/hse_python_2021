@@ -1,13 +1,7 @@
-def f(x):
-    global steps
+def f(x, steps):
     steps += 1
     if x == 0:
-        return
+        return steps
     elif x % 2 == 0:
-        return f(x // 2)
-    return f(x - 1)
-
-
-steps = 0
-f(int(input()))
-print(steps - 1)
+        return f(x // 2, steps)
+    return f(x - 1, steps)
