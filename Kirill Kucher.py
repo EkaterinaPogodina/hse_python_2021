@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
-
 def check(number):
     flag = True
     copy_of_number = number
@@ -22,11 +16,3 @@ def calculate_answer(left, right):
         if check(number):
             answer.append(number)
     return answer
-
-
-# In[9]:
-
-
-left, right = [int(element) for element in input().split()]
-print(calculate_answer(left, right))
-
