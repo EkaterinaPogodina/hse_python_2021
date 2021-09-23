@@ -4,7 +4,6 @@ def change_digit(number, dig_num):
 
     elif number // 10 ** dig_num - number // 10 ** (dig_num + 1) * 10 == 9:
         number -= 3 * 10 ** dig_num
-
     return number
 
 
