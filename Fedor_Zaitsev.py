@@ -15,5 +15,5 @@ def max_69_number(input_number):
     return ans
 
 
-num = int(input())
-print(max_69_number(num))
+input_num = int(input())
+print(max_69_number(input_num))
