@@ -5,7 +5,3 @@ def f(n):
         summ += int(i)
         multiple *= int(i)
     return multiple - summ
-
-
-n = input()
-print(f(n))
