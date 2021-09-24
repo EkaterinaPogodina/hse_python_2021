@@ -1,4 +1,4 @@
-def change_digit(number, dig_num):
+def change_dig(number, dig_num):
     if number // 10**dig_num - number // 10**(dig_num + 1) * 10 == 6:
         number += 3 * 10**dig_num
 
@@ -10,7 +10,7 @@ def change_digit(number, dig_num):
 def max_69_number(input_number):
     ans = input_number
     for i in range(5):
-        ans = max(ans, change_digit(input_number, i - 1))
+        ans = max(ans, change_dig(input_number, i - 1))
     return ans
 
 
