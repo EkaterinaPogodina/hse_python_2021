@@ -1,13 +1,9 @@
-def when(peer):
+def how(hour):
     beer = 0
-    while peer != 0:
-        if peer % 2 == 0:
-            peer = peer / 2
+    while hour != 0:
+        if hour % 2 == 0:
+            hour = hour / 2
         else:
-            peer = peer - 1
+            hour = hour - 1
         beer += 1
     return beer
-
-
-fun = int(input())
-print(when(fun))
