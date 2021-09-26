@@ -6,3 +6,4 @@ class Solution:
             return int(num)
         else:
             return int(num[:ind] + '9' + num[ind + 1:])
+
